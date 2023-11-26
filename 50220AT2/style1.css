@@ -1,0 +1,246 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+
+/* Header Styles */
+header {
+    background: #140f0f; /* Existing background color */
+    color: #fff;
+    padding: 0 1em; /* No top and bottom padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the contents */
+    position: fixed; /* Fix header at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Adjusted Logo Size and Padding/Margin */
+header .logo img {
+    max-height: 40px; /* Adjust the logo size */
+    width: auto;
+    display: block; /* Remove extra spacing */
+    margin: 0; /* No margin around the logo */
+}
+
+/* Navigation Styles */
+header nav {
+    flex-grow: 1; /* Allow nav to take up available space */
+    text-align: right; /* Align navigation items to the right */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flex for horizontal layout */
+    align-items: center; /* Align items vertically */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Adjusted margin for spacing between items */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Adjust font size as needed */
+}
+
+
+
+/* Hero Section Styles */
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 40em; /* 300px converted to em */
+    background: url('image/Hero3.png') no-repeat center right;
+    background-size: cover;
+}
+
+#hero h1 {
+    position: absolute;
+    top: 60%; /* Vertical position - adjust as needed */
+    left: 50%; /* Horizontal position - adjust as needed */
+    transform: translate(-50%, -50%); /* Centers the text */
+    font-size: 3em; /* 36px converted to em */
+    
+}
+
+#hero p {
+    position: absolute;
+    top: 75%; /* Vertical position - adjust as needed */
+    left: 50%; /* Horizontal position - adjust as needed */
+    transform: translate(-50%, -50%); /* Centers the text */
+    
+    
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+#about .image-text-container {
+    flex-direction: row; /* Image on left for About */
+}
+
+#services .image-text-container {
+    flex-direction: row-reverse; /* Image on right for Services */
+    background-color: rgb(219, 222, 231);
+}
+
+#about .image-text-container img {
+    width: 30%; /* Adjust width as needed */
+    height: auto;
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+#services .image-text-container img {
+    width: 30%; /* Adjust width as needed */
+    height: auto;
+    padding: 1px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width */
+    background-color: #e6e5e5;
+}
+
+#about .text-content {
+    flex: 1;
+    padding: 35px;
+    background-color: #f7f4f4;
+}
+
+#services .text-content {
+    flex: 1;
+    padding: 35px;
+    
+}
+
+
+#contact {
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    padding: 20px;
+}
+
+#contact .contact-details, #contact form {
+    flex: 1; /* Each takes half the width */
+    padding: 20px;
+}
+
+
+
+
+/* Contact Form Styles */
+#contact form {
+    max-width: 31.25em; /* 500px converted to em */
+    margin: 1.25em auto; /* 20px converted to em */
+}
+
+#contact form div {
+    margin-bottom: 0.625em; /* 10px converted to em */
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 0.3125em; /* 5px converted to em */
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 0.5em; /* 8px converted to em */
+    border: 0.0625em solid #ccc; /* 1px converted to em */
+}
+
+#contact form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.625em; /* 10px converted to em */
+    background: #140f0f;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+    background: #140f0f;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.625em 0; /* 10px converted to em */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    header nav ul li {
+        margin: 0 0.9375em; /* 15px converted to em */
+    }
+
+    header {
+        padding: 0.9375em 0; /* 15px converted to em */
+    }
+
+    #contact form {
+        width: 90%;
+        padding: 0 0.3125em; /* 5px converted to em */
+    }
+
+    #hero h1 {
+        font-size: 2em; /* Smaller font size for mobile screens */
+
+    }
+    #hero p {        font-size: 0.5em; /* Smaller font size for mobile screens */
+    }
+    
+    
+
+    #about .image-text-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    #services .image-text-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+     #about .image-text-container img {
+        width: 100%; /* Full width for image */
+        order: -1; /* Place image above the text */
+        padding: 0; /* Remove padding for mobile view */
+    }
+
+    #services .image-text-container img {
+        width: 100%; /* Full width for image */
+        order: -1; /* Place image above the text */
+        padding: 0; /* Remove padding for mobile view */
+    }
+
+    #contact {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    #contact .contact-details, #contact form {
+        width: 100%; /* Full width for each item on smaller screens */
+    }
+}
