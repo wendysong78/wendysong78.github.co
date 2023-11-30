@@ -15,31 +15,46 @@ body {
 
 /* Header Styles */
 header {
-    background: #140f0f; /* Existing background color */
+    background: #22303e; /* Existing background color */
     color: #fff;
-    padding: 0 1em; /* No top and bottom padding */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Spacing between left and right parts */
     align-items: center; /* Vertically center the contents */
     position: fixed; /* Fix header at the top */
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    padding: 0 1em; /* Horizontal padding */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
-/* Adjusted Logo Size and Padding/Margin */
+/* Logo and Title Container */
+.header-left {
+    display: flex;
+    align-items: center;
+    width:50%;
+}
+
+
+
+/* Adjusted Logo Size */
 header .logo img {
     max-height: 40px; /* Adjust the logo size */
     width: auto;
-    display: block; /* Remove extra spacing */
-    margin: 0; /* No margin around the logo */
+}
+
+/* Title next to Logo */
+.header-title {
+    font-size: 1.5em; /* Adjust font size as needed */
+    color: white;
+    margin-left: 10px; /* Space between logo and title */
 }
 
 /* Navigation Styles */
 header nav {
-    flex-grow: 1; /* Allow nav to take up available space */
     text-align: right; /* Align navigation items to the right */
+    width:50%;
 }
 
 header nav ul {
@@ -47,6 +62,7 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex; /* Use flex for horizontal layout */
+    justify-content: flex-end;
     align-items: center; /* Align items vertically */
 }
 
@@ -67,33 +83,32 @@ header nav ul li a {
     position: relative;
     text-align: center;
     color: white;
-    height: 40em; /* 300px converted to em */
-    background: url('image/Hero3.png') no-repeat center right;
+    height: 40em; /* Adjust the height as needed */
+    background: url('image/Hero3.png') no-repeat top right;
     background-size: cover;
+    padding-top: 70px; /* Add padding equal to the header's height */
 }
 
 #hero h1 {
     position: absolute;
-    top: 60%; /* Vertical position - adjust as needed */
-    left: 50%; /* Horizontal position - adjust as needed */
-    transform: translate(-50%, -50%); /* Centers the text */
-    font-size: 3em; /* 36px converted to em */
-    
+    top: 60%; /* Adjust vertical position as needed */
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
 }
 
 #hero p {
     position: absolute;
-    top: 75%; /* Vertical position - adjust as needed */
-    left: 50%; /* Horizontal position - adjust as needed */
-    transform: translate(-50%, -50%); /* Centers the text */
-    
-    
+    top: 75%; /* Adjust vertical position as needed */
+    left: 40%;
+    transform: translate(-50%, -50%);
 }
 
 .image-text-container {
     display: flex;
     align-items: center;
-    
+    max-width: 1200px; /* Maximum width for comfortable reading */
+    margin: 0 auto; /* Center the container */
 }
 
 #about .image-text-container {
@@ -102,7 +117,7 @@ header nav ul li a {
 
 #services .image-text-container {
     flex-direction: row-reverse; /* Image on right for Services */
-    background-color: rgb(219, 222, 231);
+    
 }
 
 #about .image-text-container img {
@@ -137,11 +152,19 @@ header nav ul li a {
     display: flex;
     justify-content: space-between; /* Distributes space between items */
     padding: 20px;
+    max-width: 1200px; /* Maximum width for comfortable reading */
+    margin: 0 auto; /* Center the container */
 }
 
 #contact .contact-details, #contact form {
     flex: 1; /* Each takes half the width */
     padding: 20px;
+}
+
+/* Contact Form Styles */
+#contact form {
+    max-width: 500px; /* Adjust the max width as needed */
+    margin: 20px auto;
 }
 
 
@@ -194,24 +217,33 @@ footer {
 
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
-    header nav ul li {
-        margin: 0 0.9375em; /* 15px converted to em */
+    .header-left, header nav {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center;
+        margin-bottom: 10px; /* Space between logo/title and nav on smaller screens */
+    }
+    .header-left {
+        justify-content: center;
+    }
+    header nav{
+        background-color: #140f0f;
     }
 
-    header {
-        padding: 0.9375em 0; /* 15px converted to em */
+    header nav ul {
+        justify-content: center; /* Center nav items on smaller screens */
     }
 
-    #contact form {
-        width: 90%;
-        padding: 0 0.3125em; /* 5px converted to em */
-    }
-
+    
+#hero {
+    height:600px;
+}
     #hero h1 {
         font-size: 2em; /* Smaller font size for mobile screens */
+        left: 50%;
 
     }
-    #hero p {        font-size: 0.5em; /* Smaller font size for mobile screens */
+    #hero p {        font-size: 0.8em; /* Smaller font size for mobile screens */
+        left: 50%;
     }
     
     
