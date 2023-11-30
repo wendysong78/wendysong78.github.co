@@ -12,14 +12,11 @@ body {
     background-color: #fff;
 }
 
-a {
-    color: #0044cc; /* Ensure links also have sufficient contrast */
-}
 
 
 /* Header Styles */
 header {
-    background: #000; /* Existing background color */
+    background: #22303e; /* Existing background color */
     color: #fff;
     display: flex;
     justify-content: space-between; /* Spacing between left and right parts */
@@ -142,7 +139,7 @@ header nav ul li a {
 #about .text-content {
     flex: 1;
     padding: 35px;
-    background-color: #f7f4f4;
+   
 }
 
 #services .text-content {
