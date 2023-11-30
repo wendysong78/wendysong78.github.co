@@ -19,7 +19,7 @@ a {
 
 /* Header Styles */
 header {
-    background: #22303e; /* Existing background color */
+    background: #000; /* Existing background color */
     color: #fff;
     display: flex;
     justify-content: space-between; /* Spacing between left and right parts */
