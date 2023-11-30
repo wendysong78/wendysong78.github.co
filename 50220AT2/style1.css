@@ -226,9 +226,7 @@ footer {
     .header-left {
         justify-content: center;
     }
-    header nav{
-        background-color: #140f0f;
-    }
+    
 
     header nav ul {
         justify-content: center; /* Center nav items on smaller screens */
