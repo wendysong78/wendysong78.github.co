@@ -48,7 +48,7 @@ header .logo img {
 /* Title next to Logo */
 .header-title {
     font-size: 1.5em; /* Adjust font size as needed */
-    color: white;
+    color: #ffffff;
     margin-left: 10px; /* Space between logo and title */
 }
 
@@ -87,22 +87,23 @@ header nav ul li a {
     height: 40em; /* Adjust the height as needed */
     background: url('image/Hero3.png') no-repeat top right;
     background-size: cover;
-    padding-top: 70px; /* Add padding equal to the header's height */
+    padding-top: 50px; /* Add padding equal to the header's height */
 }
 
 #hero h1 {
     position: absolute;
-    top: 60%; /* Adjust vertical position as needed */
-    left: 40%;
+    top: 50%; /* Adjust vertical position as needed */
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
 }
 
 #hero p {
     position: absolute;
-    top: 75%; /* Adjust vertical position as needed */
-    left: 40%;
+    top: 65%; /* Adjust vertical position as needed */
+    left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 1.5em;
 }
 
 .image-text-container {
@@ -110,6 +111,7 @@ header nav ul li a {
     align-items: center;
     max-width: 1200px; /* Maximum width for comfortable reading */
     margin: 0 auto; /* Center the container */
+    padding-top: 50px;
 }
 
 #about .image-text-container {
@@ -235,24 +237,29 @@ footer {
     
 #hero {
     height:600px;
+    padding-top: 100px;
+    
 }
     #hero h1 {
         font-size: 2em; /* Smaller font size for mobile screens */
         left: 50%;
-
+        top: 70%;
     }
     #hero p {        font-size: 0.8em; /* Smaller font size for mobile screens */
         left: 50%;
+        top: 80%;
     }
     
     
 
     #about .image-text-container {
         flex-direction: column; /* Stack items vertically */
+        padding-top: 70px;
     }
 
     #services .image-text-container {
         flex-direction: column; /* Stack items vertically */
+        padding-top: 70px;
     }
 
      #about .image-text-container img {
@@ -269,6 +276,7 @@ footer {
 
     #contact {
         flex-direction: column; /* Stack items vertically on smaller screens */
+        padding-top: 70px;
     }
 
     #contact .contact-details, #contact form {
