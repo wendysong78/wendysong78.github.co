@@ -1,0 +1,1162 @@
+/* General Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    z-index: 1000;
+    position: fixed; 
+    flex-wrap: wrap; 
+    width:100%;
+}
+
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Adjust size as needed */
+    background: none;
+    border: none;
+    color: white; /* Adjust color as needed */
+    cursor: pointer;
+}
+
+header .logo a {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+   
+}
+header nav {
+    font-size:0.8em;
+    text-align: right; 
+    margin:0 15px;
+    justify-content: flex-end; 
+}
+header nav a {
+    
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    align-items: center;
+    height: 100%;
+}
+header nav a:hover {
+    
+    background-color: orange;
+    border-radius: 0px;
+   
+}
+
+header nav a.active-page {
+    background-color: orange;
+    /* Add other styling as needed */
+}
+
+
+/* Hero Section Styling */
+#hero {
+    position: relative;
+    background-image: url('images/hero1.jpg');
+    background-size: cover;
+    text-align: center;
+    height:45em;
+}
+#hero h1 {
+    top: 30%;
+    left: 20%;
+    position: absolute;
+    text-align: left;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+#hero p {
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    max-width: 36em;
+    color: white;
+    font-size: 1em;
+    line-height: 1.8em;
+    text-align: left;
+    
+    
+}
+#hero a {
+    background-color: orange;
+    position: absolute;
+    top: 65%;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    left:20%;
+}
+
+#about_hero {
+    position: relative;
+    background-image: url('images/about_hero.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+    text-align: center;
+    height:20em;
+}
+
+#contact_hero {
+    position: relative;
+    background-image: url('images/contact_hero.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+    text-align: center;
+    height:20em;
+}
+
+#clubs_hero {
+    position: relative;
+    background-image: url('images/clubs_hero.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+    text-align: center;
+    height:20em;
+}
+
+#classes_hero {
+    position: relative;
+    background-image: url('images/classes_hero.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+    text-align: center;
+    height:20em;
+    background-position: right;
+}
+#contact_hero h1 {
+    font-style:italic;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    padding:15px;
+    transform: translateX(-50%);
+}
+
+#about_us {
+    width: 70%;
+    display: flex;
+    justify-content: space-between; /* Adjust space distribution between flex items */
+    padding: 20px;
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+
+
+#about_us article {
+    width: 70%; /* Article section takes 60% width */
+    padding-right: 20px; /* Spacing between article and aside */
+}
+
+#about_us article h2{
+    font-family: 'Montserrat', sans-serif;
+}
+#about_us article p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1em;
+    line-height:1.5em;
+}
+
+#about_us .class-list-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#about_us .class-list-container ul {
+    list-style-type: style type decimal;
+   
+    flex-basis: 22%; 
+ 
+}
+
+#about_us .class-list-container li {    
+    font-size:0.9em;
+    line-height: 1.5em;
+    
+}
+#about_us .class-list-container a {
+    text-decoration: none;
+    background-color: #333;
+    color:white;
+   
+    
+}
+#about_us aside {
+    width: 30%; /* Aside section takes 40% width */
+    text-align: center; /* Center content in aside */
+    background-color: #333;
+    color:white;
+   
+    
+}
+
+#about_us aside p{
+
+    font-size: 0.8em;
+    line-height: 1.8em;
+    font-style: italic;
+    padding:20px;
+    
+    
+}
+
+#about_us aside h3{
+    font-size: 1em;
+    line-height: 1.5em;
+    padding:20px;
+   
+}
+
+#about_us aside img{
+    width:50%;
+    margin:50px 20px 10px 20px;
+    border-color:white;
+    border-radius:1px;
+    border-style:solid;    
+    
+}
+
+#clubspage {
+    width: 70%;
+    display: flex;
+    justify-content: space-between; /* Adjust space distribution between flex items */
+    padding-top:20px;
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+#clubspage aside {
+    flex-direction: column; 
+    padding:0px;
+  
+    width: 25%; 
+    text-align: center; /* Center content in aside */
+    background-color: #333;
+    color:white;
+   
+    
+}
+
+#clubspage article {
+    width: 75%; 
+    padding-left: 20px; 
+}
+
+#clubspage aside img{
+    width:80%;
+    margin:20px 20px 10px 20px;
+    border-color:white;
+    border-radius:1px;
+    border-style:solid;    
+    
+}
+#clubspage aside a{
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color:white;
+    display: block;
+    background-color: orange;
+    padding:0px 0px 10px 0px;
+}
+
+#classespage {
+    width: 70%;
+    display: flex;
+    justify-content: space-between; /* Adjust space distribution between flex items */
+    padding-top:20px;
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+#classespage aside {
+    flex-direction: column; 
+    padding:0px;
+  text-align: center;
+    width: 20%; 
+    text-align: center; /* Center content in aside */
+    background-color: #333;
+    color:white;
+   
+    
+}
+
+#classespage article {
+    width: 80%; 
+    padding-left: 20px; 
+}
+
+#classespage aside img{
+    width:80%;
+    margin:20px 20px 10px 20px;
+    border-color:white;
+    border-radius:1px;
+    border-style:solid;    
+    
+}
+#classespage aside a{
+    font-size: 0.8em;
+    text-decoration: none;
+    text-align: left;
+    align-items: center;
+    color:white;
+    display: block;
+    border-bottom-style:solid;
+    background-color: orange;
+    padding:10px 10px 10px 10px;
+}
+
+
+#classespage aside a:hover{
+    background-color: #333;
+}
+
+
+
+#contact-form {   
+    width: 70%; /* Set the width of the form */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px;
+    margin: 20px auto; /* Center the form horizontally */
+    font-size: 1em;
+}
+
+.form-field select {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+
+.message-field {    
+   
+    margin-bottom: 10px;    
+   
+   grid-column: 1 / -1; /* Make the message field span two columns */  
+}
+
+.message-field textarea{
+    width:100%;
+    border-radius: 0px;  
+}
+
+label {
+    font-size:0.8em;    
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+.form-field input[type="text"],
+.form-field input[type="tel"],
+.form-field input[type="email"] {
+    width: 95%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    padding-left: 25px; 
+}
+
+
+
+
+
+
+
+.member-options {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between items */
+}
+
+
+
+.input-wrapper-name::before {
+    font-family: "Font Awesome 5 Free"; /* Font family of Font Awesome */
+    content: "\f007"; /* Unicode of the user icon */
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 0.8em;
+    padding-top:10px;
+    
+}
+.input-wrapper-name {
+    position: relative; /* Needed for absolute positioning of the icon */
+}
+
+.input-wrapper-mobile::before {
+    font-family: "Font Awesome 5 Free"; /* Font family of Font Awesome */
+    content: "\f3cd"; /* Unicode of the user icon */
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 0.8em;
+    padding-top:10px;
+    font-weight: 900;
+    
+}
+.input-wrapper-mobile {
+    position: relative; /* Needed for absolute positioning of the icon */
+}
+
+.input-wrapper-email::before {
+    font-family: "Font Awesome 5 Free"; /* Font family of Font Awesome */
+    content: "\f0e0"; /* Unicode of the user icon */
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 0.8em;
+    padding-top:10px;
+    
+}
+.input-wrapper-email {
+    position: relative; /* Needed for absolute positioning of the icon */
+}
+
+
+
+
+.form-field input::placeholder {
+    
+    color:grey;
+    opacity: 1; /* Ensure the placeholder is fully visible */
+}
+@media (min-width: 681px) {
+    .form-field input::placeholder {
+        color: transparent;  /* Hides the placeholder */
+    }
+}
+
+
+/* Style for Submit button and Help link */
+.form-field.message-field input[type="submit"],
+.form-field.message-field .help-link {
+    margin-top: 10px; /* Add some space above the button and link */
+    display: block; /* Ensure they take the full width */
+}
+
+
+
+
+input[type="submit"] {
+    
+    background-color: #333;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+.error {
+    color:red;
+    font-size: 0.8em;
+}
+
+
+input:required::after {
+    content: '*';
+    color: black;
+    margin-left: 5px;
+}
+
+input:focus {
+    border-color: red;
+    border-radius: 0px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+/* Help Link */
+.help-link {
+    
+    font-size:0.8em;
+    color:blue
+}
+.help-link:hover + .help-content {
+    display: block;
+    
+}
+
+.help-content {
+  
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#clubs {
+    max-width:1350px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto; 
+    
+}
+
+
+#clubs aside {
+    width: 15%;
+    background-color: orange;
+    text-align:center;
+}
+
+#clubs aside h2 {
+   
+    
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#clubs aside a {
+    background-color:white;
+   
+    text-align:center;
+    color: orange;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+
+#clubs article {
+    width: 16%;  
+}
+#clubs article a {
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color:white;
+    display: block;
+    background-color: orange;
+    padding:0px 0px 10px 0px;
+    
+}
+#clubs article img {
+    width: 100%;
+    border-radius: 0px; /* Optional for rounded corners */
+}
+
+
+#classes {
+    max-width:1350px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto; 
+    
+}
+
+
+#classes aside {
+    width: 15%;
+    background-color:#333;
+    text-align:center;
+}
+
+#classes aside h2 {
+   
+    
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#classes aside a {
+    background-color:white;
+   
+    text-align:center;
+    color: #333;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+
+#classes article {
+    width: 16%;  
+}
+#classes article a {
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color:white;
+    display: block;
+    background-color: #333;
+    padding:0px 0px 10px 0px;
+    
+}
+#classes article img {
+    width: 100%;
+    border-radius: 0px; 
+}
+/* Footer Styling */
+footer {
+    background-color: #333;   
+    color: white; 
+    align-items: center;
+    text-align: center;
+}
+
+footer p{
+    line-height: 1.5em;
+    font-size: 0.8em;   
+}
+
+footer img{
+    max-width: 60px;
+    padding-bottom:15px;
+}
+
+#footer-nav {
+   
+    background-color: orange;
+    text-align: center; 
+    width:100%;
+    padding:10px 0px 10px 0px;
+}
+
+#footer-nav ul {
+    width:50%;  
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto; /* Center the ul element */
+    display: flex; 
+    justify-content:space-around;
+    align-items: center; 
+}
+
+
+#footer-nav ul li a {
+    color: white;
+    text-decoration: none; 
+    font-size: 0.8em; 
+    padding-right:20px;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 680px) {
+    header {
+        justify-content: center; 
+        padding: 10px 20px; 
+        position: relative;
+        z-index: 1000;
+        position: fixed;
+    }
+
+    header nav {
+        text-align: left; 
+        display: none;
+        position: absolute; 
+        width: 40%; 
+        top: 60px; 
+        left: 0;
+        background-color: #333; 
+    }
+    
+  
+    #clubs, #classes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger-menu {
+        font-family: 'Montserrat', sans-serif;
+        display: block; 
+        font-size: 1.2em;
+        position: absolute;
+        left: 10px; 
+        top: 10px; 
+        color:orange;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    header .logo a {
+        font-size: 1em;
+        margin:0 auto;
+    }
+
+    .nav-active {
+        display: flex; 
+        flex-direction: column;
+        text-align: left;/* Display the nav when nav-active class is added */
+    }
+    header nav a {
+        padding: 10px;
+        font-size:0.8em;
+        color: white;
+        text-decoration: none;
+        display: block; /* Make each link a block to stack them vertically */
+    }
+
+     /* Adjust as needed when menu is open */
+ 
+
+
+    #hero {
+        
+        background-image: url('images/hero1.jpg');
+        background-position: 50%;
+        background-size: cover;
+        position: relative;
+        height:40em;
+    }
+
+    #hero h1 {
+        top: 15%;        
+        text-align: center;           
+        color: white;
+        font-size: 2.1em;
+        line-height: 1.6em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        position: absolute;
+        left:50%;
+        width:100%;
+        transform: translateX(-50%);
+        background-color: rgba(0,0,0,.5);
+        
+
+    }
+    #hero p {
+        
+        top: 40%;
+        text-align: center;        
+        color: white;
+        font-size: 1em;
+        line-height: 1.8em;
+        position: absolute;
+        left:50%;
+        width:80%;
+        transform: translateX(-50%);
+        background-color: rgba(0,0,0,.3);
+        
+        
+    }
+    #hero a {
+        background-color: orange;        
+        top: 70%;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;       
+        display: inline-block;
+        position: absolute;
+        left:50%;       
+        transform: translateX(-50%);
+        
+    }
+
+    #clubs {
+        
+        margin: 20px auto; 
+        
+    }
+    #clubs aside {
+        width:100%;
+        
+    }
+    #clubs aside h2 {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    
+    #clubs aside a{
+        display:none;
+    }
+    #clubs article {
+        width: 90%; /* Full width for smaller screens */
+        
+        position: relative; /* Needed for absolute positioning of children */
+        margin:15px 15px 0px 15px;
+    }
+
+    #clubs article a {
+        display: block; /* Ensure the link uses the full area of the article */
+        text-decoration: none;
+        color: white;
+        position: relative; /* Relative position for the text layer */
+        padding:0px 0px 0px 0px;
+    }
+
+    #clubs article a img {
+        width: 100%;
+        display: block; /* Ensure the image takes the full width */
+        border-radius: 0px; /* Optional for rounded corners */
+    }
+
+    #clubs article a span {
+        font-size:1.3em;
+        position: absolute; /* Absolute position for the text */
+        top: 50%; /* Position at the top of the image */
+     
+        width: 60%; /* Same width as the image */
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #classes {
+        
+        margin: 10px auto; 
+        
+    }
+    #classes aside {
+        width:100%;
+        background-color: orange;
+        
+    }
+    #classes aside h2 {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    
+    #classes aside a{
+        display:none;
+        margin:0px;
+        padding:0px;
+    }
+    #classes article {
+        width: 90%; /* Full width for smaller screens */
+        
+        position: relative; /* Needed for absolute positioning of children */
+        margin:15px 15px 0px 15px;
+    }
+
+    #classes article a {
+        display: block; /* Ensure the link uses the full area of the article */
+        text-decoration: none;
+        color: white;
+        position: relative; /* Relative position for the text layer */
+        padding:0px 0px 0px 0px;
+    }
+
+    #classes article a img {
+        width: 100%;
+        display: block; /* Ensure the image takes the full width */
+        border-radius: 0px; /* Optional for rounded corners */
+    }
+
+    #classes article a span {
+        font-size:1.3em;
+        position: absolute; /* Absolute position for the text */
+        top: 50%; /* Position at the top of the image */
+     
+        width: 60%; /* Same width as the image */
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #about_us {
+        flex-direction: column;
+        align-items:center;
+       
+        width:90%;
+    }
+   
+    #about_us aside{
+        
+        width:90%;
+        align-items:start;
+        justify-content: flex-start; /* Align items to the start */
+        
+    }
+    #about_us aside img {
+        max-width: 200px;
+        
+    }
+
+    #about_us .class-list-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    #about_us .class-list-container ul {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0;
+        padding: 0;
+        flex-basis: 45%; /* Adjust for two columns */
+        /* Optional: add some padding or margin here for spacing between columns */
+    }
+
+    #about_us .class-list-container li {
+        margin-bottom: 5px; /* Spacing between items */
+    }
+
+    #clubspage .class-list-container ul {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0;
+        padding: 0;
+        font-size:0.8em;
+        flex-basis: 45%; /* Adjust for two columns */
+        /* Optional: add some padding or margin here for spacing between columns */
+    }
+
+    #clubspage .class-list-container li {
+        margin-bottom: 5px; /* Spacing between items */
+    }
+
+    #clubspage {
+        flex-direction: column;
+        align-items:center;
+        padding:0px;
+        margin:0px;
+       
+        width:100%;
+    }
+
+    #clubspage aside{
+       
+        padding:0px;
+        margin:0px;
+        width: 100%; /* Make asides full width */
+        order: 2; /* Optionally move asides to the bottom */
+    }
+
+    #clubspage aside img{
+        display:none;
+    }
+
+ 
+
+    #clubspage article{
+        padding:0px;
+        margin:0px;
+    }
+
+    #clubspage aside a{
+        padding-top:15px;
+        background-color: #333;
+    }
+    #clubspage aside a:hover{
+        background-color: orange;
+    }
+
+
+    #classespage .class-list-container ul {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0;
+        padding: 0;
+        font-size:0.8em;
+        flex-basis: 45%; /* Adjust for two columns */
+        /* Optional: add some padding or margin here for spacing between columns */
+    }
+
+    #classespage .class-list-container li {
+        margin-bottom: 5px; /* Spacing between items */
+    }
+
+    #classespage {
+        flex-direction: column;
+        align-items:center;
+        padding:0px;
+        margin:0px;
+       
+        width:100%;
+    }
+
+    #classespage aside{
+       
+        padding:0px;
+        margin:0px;
+        width: 90%; /* Make asides full width */
+        order: 2; /* Optionally move asides to the bottom */
+    }
+
+    #classespage aside img{
+        display:none;
+    }
+
+ 
+
+    #classespage article{
+        padding:0px;
+        margin:0px;
+    }
+
+    #classespage aside a{
+        text-align: center;
+        padding-top:5px;
+        background-color: #333;
+    }
+
+    #classespage aside a:hover{
+        
+        background-color: orange;
+    }
+
+    #contact_hero h1{
+        font-size:1.2em;
+    }
+
+
+    #contact-form {
+        grid-template-columns: 1fr;
+        width: 80%;
+        gap: 15px;
+    }
+
+      
+    .form-field label[for="member"],
+    .form-field label[for="member-yes"],
+    .form-field label[for="member-no"],
+    .form-field label[for="enquiry-type"]
+    {
+        display: block;
+    }
+    .form-field label {
+        display: none;
+    }
+
+    .message-field label {
+        display: none;
+    }
+
+
+
+    #footer-nav ul {
+        width:80%;  
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto; /* Center the ul element */
+        
+        justify-content:space-around;
+        align-items: center; 
+    }
+
+
+    
+
+    
+
+    
+    
+}
+
+
+@media (max-width: 1300px) and (min-width:680px){
+    .hamburger-menu {
+        display:none;
+    }
+
+    #about_us {
+        flex-direction: column;
+        align-items:center;
+       
+        width:90%;
+    }
+    #about_us aside{
+        display: flex;
+        width:90%;
+        align-items:start;
+        justify-content: flex-start; /* Align items to the start */
+        
+    }
+    #about_us aside img {
+        max-width: 200px;
+        
+    }
+    #about_us aside .text-content {
+        padding:20px;
+      
+       text-align: left;
+        display: flex;
+        flex-direction: column; /* Stack h2, h3, and p vertically */
+    }
+    #about_us aside .text-content h2{
+        margin:0;
+        font-size:1.2em;
+        margin-top:20px;
+        text-align: center;
+    }
+    #about_us aside .text-content h3{
+        font-size: 0.8em;
+        margin:0;
+        
+    }
+    #about_us aside .text-content p {
+        margin:0;
+        padding:0;
+        margin-bottom:20px;
+    }
+
+   
+}
