@@ -18,20 +18,17 @@ $(document).ready(function() {
             }
         });
 
-        var currentLocation = window.location.pathname;
+        var currentLocation = window.location.href;
         var navLinks = document.querySelectorAll('header nav a');
 
-        // Remove active class from all links first
         navLinks.forEach(function(link) {
             link.classList.remove('active-page');
         });
 
         navLinks.forEach(function(link) {
-            if (currentLocation.endsWith('/') && link.href.endsWith('index.html')) {
-                // Highlight the Home link when on root URL
-                link.classList.remove('active-page');
-            } else if (link.href.includes(currentLocation)) {
-                // Highlight link that matches the current URL
+            if ((currentLocation.endsWith('/') || currentLocation.endsWith('index.html')) && link.href.endsWith('index.html')) {
+                link.classList.add('active-page');
+            } else if (currentLocation.includes(link.getAttribute('href'))) {
                 link.classList.add('active-page');
             }
         });
