@@ -29,7 +29,7 @@ $(document).ready(function() {
         navLinks.forEach(function(link) {
             if (currentLocation.endsWith('/') && link.href.endsWith('index.html')) {
                 // Highlight the Home link when on root URL
-                link.classList.add('active-page');
+                link.classList.remove('active-page');
             } else if (link.href.includes(currentLocation)) {
                 // Highlight link that matches the current URL
                 link.classList.add('active-page');
