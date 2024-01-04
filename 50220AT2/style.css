@@ -1,4 +1,4 @@
-/* General Body Styling */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-/* Header Styling */
+
 header {
     background-color: #333;
     color: white;
@@ -191,7 +191,7 @@ header nav a.active-page {
 }
 
 #about_us .class-list-container ul {
-    list-style-type: style type decimal;
+    list-style-type:circle;
    
     flex-basis: 22%; 
  
@@ -349,6 +349,9 @@ header nav a.active-page {
     font-size: 1em;
 }
 
+#contact-form fieldset{
+    border:none;
+}
 .form-field select {
     width: 100%; 
     padding: 8px;
@@ -360,8 +363,7 @@ header nav a.active-page {
 .message-field {    
    
     margin-bottom: 10px;    
-   
-   grid-column: 1 / -1; /* Make the message field span two columns */  
+    grid-column: 1 / -1; /* Make the message field span two columns */  
 }
 
 .message-field textarea{
@@ -533,8 +535,8 @@ input:valid {
   
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 60%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
@@ -551,6 +553,32 @@ input:valid {
     
 }
 
+#clubs .club_side{
+    width: 15%;
+    background-color: orange;
+    text-align:center;
+
+}
+
+#clubs .club_side h2{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#clubs .club_side a{
+
+    background-color:white;
+   
+    text-align:center;
+    color: orange;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
 
 #clubs aside {
     width: 15%;
@@ -578,6 +606,28 @@ input:valid {
     margin-top: 20px;
     display: inline-block;
     
+}
+
+#clubs .club_img_name{
+    width: 16%; 
+}
+
+#clubs .club_img_name a{
+
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color:white;
+    display: block;
+    background-color: orange;
+    padding:0px 0px 10px 0px;
+}
+
+#clubs .club_img_name img{
+
+    width: 100%;
+    border-radius: 0px; /* Optional for rounded corners */
 }
 
 #clubs article {
@@ -610,13 +660,13 @@ input:valid {
 }
 
 
-#classes aside {
+#classes .class_side {
     width: 15%;
     background-color:#333;
     text-align:center;
 }
 
-#classes aside h2 {
+#classes .class_side h2 {
    
     
     color:white;
@@ -625,7 +675,7 @@ input:valid {
     font-size: 1.3em;
 }
 
-#classes aside a {
+#classes .class_side a {
     background-color:white;
    
     text-align:center;
@@ -638,10 +688,10 @@ input:valid {
     
 }
 
-#classes article {
+#classes .class_img_name  {
     width: 16%;  
 }
-#classes article a {
+#classes .class_img_name a {
     font-size: 1em;
     text-decoration: none;
     text-align: center;
@@ -652,7 +702,7 @@ input:valid {
     padding:0px 0px 10px 0px;
     
 }
-#classes article img {
+#classes .class_img_name img {
     width: 100%;
     border-radius: 0px; 
 }
@@ -820,27 +870,27 @@ footer img{
         margin: 20px auto; 
         
     }
-    #clubs aside {
+    #clubs .club_side {
         width:100%;
         
     }
-    #clubs aside h2 {
+    #clubs .club_side h2 {
         font-weight: bold;
         font-size: 1.5em;
     }
 
     
-    #clubs aside a{
+    #clubs .club_side a{
         display:none;
     }
-    #clubs article {
+    #clubs .club_img_name {
         width: 90%; /* Full width for smaller screens */
         
         position: relative; /* Needed for absolute positioning of children */
         margin:15px 15px 0px 15px;
     }
 
-    #clubs article a {
+    #clubs .club_img_name a {
         display: block; /* Ensure the link uses the full area of the article */
         text-decoration: none;
         color: white;
@@ -848,13 +898,13 @@ footer img{
         padding:0px 0px 0px 0px;
     }
 
-    #clubs article a img {
+    #clubs .club_img_name a img {
         width: 100%;
         display: block; /* Ensure the image takes the full width */
         border-radius: 0px; /* Optional for rounded corners */
     }
 
-    #clubs article a span {
+    #clubs .club_img_name a span {
         font-size:1.3em;
         position: absolute; /* Absolute position for the text */
         top: 50%; /* Position at the top of the image */
@@ -872,30 +922,30 @@ footer img{
         margin: 10px auto; 
         
     }
-    #classes aside {
+    #classes .class_side {
         width:100%;
         background-color: orange;
         
     }
-    #classes aside h2 {
+    #classes .class_side h2 {
         font-weight: bold;
         font-size: 1.5em;
     }
 
     
-    #classes aside a{
+    #classes .class_side a{
         display:none;
         margin:0px;
         padding:0px;
     }
-    #classes article {
+    #classes .class_img_name {
         width: 90%; /* Full width for smaller screens */
         
         position: relative; /* Needed for absolute positioning of children */
         margin:15px 15px 0px 15px;
     }
 
-    #classes article a {
+    #classes .class_img_name a {
         display: block; /* Ensure the link uses the full area of the article */
         text-decoration: none;
         color: white;
@@ -903,13 +953,13 @@ footer img{
         padding:0px 0px 0px 0px;
     }
 
-    #classes article a img {
+    #classes .class_img_name a img {
         width: 100%;
         display: block; /* Ensure the image takes the full width */
         border-radius: 0px; /* Optional for rounded corners */
     }
 
-    #classes article a span {
+    #classes .class_img_name a span {
         font-size:1.3em;
         position: absolute; /* Absolute position for the text */
         top: 50%; /* Position at the top of the image */
@@ -1073,6 +1123,8 @@ footer img{
         gap: 15px;
     }
 
+
+
       
     .form-field label[for="member"],
     .form-field label[for="member-yes"],
@@ -1088,7 +1140,9 @@ footer img{
     .message-field label {
         display: none;
     }
-
+    .member-options{
+        display:none;
+    }
 
 
     #footer-nav ul {
