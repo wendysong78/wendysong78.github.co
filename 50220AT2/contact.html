@@ -1,15 +1,16 @@
 
 <!DOCTYPE html>
-<html>
-<head>
-    <title>ML Strength – Health and Fitness</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ML Strength – Health and Fitness</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -30,78 +31,79 @@
 
     <form id="contact-form">
         
-        <section class="form-field">
-            <label for="member">Are you a member of us?</label>
+        <div class="form-field">
+            
             <div class="member-options">
+                <span>Are you a member of us?</span><fieldset></fieldset>
                 <label for="member-yes">Yes</label>
                 <input type="radio" id="member-yes" name="member" value="yes">
                 <label for="member-no">No</label>
                 <input type="radio" id="member-no" name="member" value="no">
-                
+            
             </div>
-            <section class="error" id="error-member"></section>
-        </section>
+        </fieldset>
+            <div class="error" id="error-member"></div>
+        </div>
 
-        <section class="form-field">
+        <div class="form-field">
             <label for="enquiry-type">Enquiry Type:</label>
             <select id="enquiry-type" name="enquiry-type">
                 <option value="general">General</option>
                 <option value="feedback">Feedback</option>
                 <option value="support">Support</option>
             </select>
-            <section class="error" id="error-enquiry-type"></section>
-        </section>
+            <div class="error" id="error-enquiry-type"></div>
+        </div>
 
-        <section class="form-field">
+        <div class="form-field">
             <label for="first-name">First Name:</label>
             <div class="input-wrapper-name">
                 <input type="text" id="first-name" name="first-name" placeholder="First Name" required pattern="[A-Za-z]+" title="Only letters allowed">
             </div>
-            <section class="error" id="error-first-name"></section>
-        </section>
+            <div class="error" id="error-first-name"></div>
+        </div>
         
-        <section class="form-field">
+        <div class="form-field">
             <label for="last-name">Last Name:</label>
             <div class="input-wrapper-name">
                 <input type="text" id="last-name" name="last-name" placeholder="Last Name" pattern="[A-Za-z]+" title="Only letters allowed" required>
             </div>
-            <section class="error" id="error-last-name"></section>
-        </section>
+            <div class="error" id="error-last-name"></div>
+        </div>
         
-        <section class="form-field">
+        <div class="form-field">
             <label for="mobile">Mobile:</label>
             <div class="input-wrapper-mobile">
                 <input type="tel" id="mobile" name="mobile" placeholder="Mobile" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit mobile number" required>
             </div>
-            <section class="error" id="error-mobile"></section>
-        </section>
+            <div class="error" id="error-mobile"></div>
+        </div>
         
-        <section class="form-field">
+        <div class="form-field">
             <label for="email">Email:</label>
             <div class="input-wrapper-email">
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
-            <section class="error" id="error-email"></section>
-        </section>
+            <div class="error" id="error-email"></div>
+        </div>
         
-        <section class="message-field">
+        <div class="message-field">
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" placeholder="Please leave your message here" required></textarea>
-            <section class="error" id="error-message"></section>    
+            <div class="error" id="error-message"></div>             
             
-            
-        </section>
+        </div>
 
         <input type="submit" value="Submit">
             
             
             <a href="#help" class="help-link">Need Help?</a>    
-            <section id="help" class="help-content">
+            <div id="help" class="help-content">
                 <video width="320" height="240" controls>
                 <source src="help.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
-            </section>
+            </div>
        
     </form>
 
