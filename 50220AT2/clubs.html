@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Strength – Health and Fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div id="header-placeholder"></div>
+    
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("header.html", function() {
+                // Load and execute script.js after the header is loaded
+                $.getScript("script.js");
+            });
+        });
+    </script>
+
+    <section id="clubs_hero">
+        
+    </section>
+
+
+    <section id="clubspage">
+        <aside>  
+            <div >
+            
+                <a href="clubs.html">
+                <img src="images/brisbanecityclub.jpg" alt="Brisbane City">
+                <span>Brisbane City</span>
+            </a>
+            </div>
+            <div><a href="clubs.html">
+                <img src="images/ashgroveclub.jpg" alt="Ashgrove">
+                <span>Ashgrove</span>
+            </a>
+
+            </div>
+            <div><a href="clubs.html">
+                <img src="images/chermsideclub.jpg" alt="Chermside">
+                <span>Chermside</span>
+            </a>
+
+            </div>
+            <div><a href="clubs.html">
+                <img src="images/gracevilleclub.jpg" alt="Graceville">
+                <span>Graceville</span>
+            </a>
+
+            </div>
+            <div><a href="clubs.html">
+                <img src="images/westlakeclub.jpg" alt="Westlake">
+                <span>Westlake</span>
+            </a>
+
+            </div>
+            <section id="clubs">
+    
+             
+        </aside>
+        <article> 
+        
+            <h2>Brisbane City Club</h2>
+            <p>Address: Wintergarden Centre, 171 - 209 Queen Street Mall Brisbane QLD 4000</p>              
+            <div class="class-list-container">
+                <ul>
+                    <li>Call us: (07) 2666 0000</li>
+                    <li>Email us: brisbanecity@mlstrength.com.au</li>
+                    <li>Accessible 24/7</li>
+                    <li>Staff Hour - Mon - Fri 9am to 3pm</li>
+                    
+                </ul>
+            </div>
+            
+                        
+            <h3>Amenities</h3>
+            <div class="class-list-container">
+                <ul>
+                    <li>24-hour Access</li>
+                    <li>Private Change Room</li>
+                    <li>Private Showers</li>
+                    <li>Vending Machine</li>
+                    <li>Free Parking</li>
+                </ul>
+            </div>
+            <h3>Equipment</h3>
+            <div class="class-list-container">
+                <ul>
+                    <li>Cardio Equipment</li>
+                    <li>Weights</li>
+                    <li>Cycling</li>
+                    <li>Hot Yoga</li>
+                    <li>Cardio Equipment</li>
+                    <li>Weights</li>
+                    <li>Cycling</li>
+                    <li>Hot Yoga</li>
+                    
+                </ul>
+            </div>
+            <h3>Timetable</h3>
+            <p>Check out our <a href="classes.html">Timetable</a> on the website for the latest schedule at each of our clubs.</p>
+            
+            
+    </article>
+
+    
+</section>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        $(document).ready(function(){
+            $("#footer-placeholder").load("footer.html"); // Load header.html content
+        });
+    </script>
+
+</body>
+</html>

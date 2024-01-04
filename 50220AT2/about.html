@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Strength – Health and Fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div id="header-placeholder"></div>
+    
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("header.html", function() {
+                // Load and execute script.js after the header is loaded
+                $.getScript("script.js");
+            });
+        });
+    </script>
+
+    <section id="about_hero">
+        
+    </section>
+
+    <section id="about_us">
+        <article> 
+        
+            <h2>Welcome to ML Strength – Health and Fitness</h2>
+            <p>At ML Strength, we redefine the conventional gym experience. Our focus is on training athletes of all levels – from professionals to enthusiastic beginners. We specialize in enhancing speed, strength, power, and providing comprehensive sports therapy.</p>              
+            <h2>Our Philosophy</h2>
+            <p>Our journey began in Brisbane, where we envisioned a fitness community that goes beyond just physical training. ML Strength is about embracing a lifestyle where fitness is a priority. Our approach caters to those who seek more than what the typical local gym offers, providing a blend of advanced exercise options and a supportive community.</p>
+            <h2>Our Clubs</h2>
+            <p>Spread across Brisbane in Ashgrove, Brisbane City, Chermside, Graceville, and Westlake, each of our clubs offers an inviting atmosphere with state-of-the-art facilities. We take pride in our family-operated ethos, distancing ourselves from mainstream, high-pressure sales gyms. Our clubs are open 24/7, always ready to welcome you for a workout, a protein shake, or just a casual visit.</p>
+            <h2>Our Class Offerings</h2>
+            <p>Explore our wide range of fitness classes designed to suit every need:</p>
+            <div class="class-list-container">
+                <ul>
+                    <li>Zumba</li>
+                    <li>Body pump</li>
+                    <li>Body step</li>
+                    <li>Rpm</li>
+                </ul>
+                <ul>
+                    <li>Body balance </li>
+                    <li>Body combat </li>
+                    <li>Body jam</li>
+                    <li>Body vive </li>
+                </ul>
+                <ul>
+                    <li>Cycle </li>
+                    <li>Pilates </li>
+                    <li>Yoga </li>
+                    <li>Body attack</li>
+                </ul>
+                <ul>
+                    <li>Boxing & TAE box </li>
+                    <li>ABT</li>
+                    <li>Abs blast </li>
+                    <li>Sculpt & combo</li>
+                </ul>
+            </div>
+            <p>Check out our <a href="classes.html">Timetable</a> on the website for the latest schedule at each of our clubs.</p>
+    </article>
+
+    <aside>  
+        <img src="images/owner.jpg">  
+        <div class="text-content">
+            <h2>Maurice Lidman</h2>
+            <h3>Maurice Lidman is the owner of ML Strength, for over three decades Maurice has been involved in the boxing scene. He has competed as an amateur in his early years and now shares his knowledge and expertise as a coach, by running his boxing classes with passion and enthusiasm.</h3> 
+            <p>"Hi, I'm Maurice Lidman, with a rich background in boxing. Having been involved in the boxing scene for over three decades, I bring a wealth of experience and passion to our boxing classes. As a coach, I'm committed to providing an energized and fun training environment for all skill levels."<p>  
+
+            </div>   
+        
+            
+        
+    
+    </aside>
+</section>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        $(document).ready(function(){
+            $("#footer-placeholder").load("footer.html"); // Load header.html content
+        });
+    </script>
+
+</body>
+</html>
