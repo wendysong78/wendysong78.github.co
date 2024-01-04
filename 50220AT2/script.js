@@ -18,12 +18,14 @@ $(document).ready(function() {
             }
         });
 
-        // Highlight the active page in the navigation
-        var currentLocation = window.location.href.split('/').pop(); // Get the last segment of the URL
+        var currentLocation = window.location.pathname.split('/').pop();
         var navLinks = document.querySelectorAll('header nav a');
 
         navLinks.forEach(function(link) {
-            if (link.getAttribute('href').endsWith(currentLocation)) {
+            if (currentLocation === "" && link.getAttribute('href').endsWith('index.html')) {
+                // If currentLocation is empty (root URL), assume it's 'index.html'
+                link.classList.add('active-page');
+            } else if (link.getAttribute('href').endsWith(currentLocation)) {
                 link.classList.add('active-page');
             } else {
                 link.classList.remove('active-page'); // Ensure only the correct link is highlighted
