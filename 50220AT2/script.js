@@ -18,17 +18,21 @@ $(document).ready(function() {
             }
         });
 
-        var currentLocation = window.location.pathname.split('/').pop();
+        var currentLocation = window.location.pathname;
         var navLinks = document.querySelectorAll('header nav a');
 
+        // Remove active class from all links first
         navLinks.forEach(function(link) {
-            if (currentLocation === "" && link.getAttribute('href').endsWith('index.html')) {
-                // If currentLocation is empty (root URL), assume it's 'index.html'
+            link.classList.remove('active-page');
+        });
+
+        navLinks.forEach(function(link) {
+            if (currentLocation.endsWith('/') && link.href.endsWith('index.html')) {
+                // Highlight the Home link when on root URL
                 link.classList.add('active-page');
-            } else if (link.getAttribute('href').endsWith(currentLocation)) {
+            } else if (link.href.includes(currentLocation)) {
+                // Highlight link that matches the current URL
                 link.classList.add('active-page');
-            } else {
-                link.classList.remove('active-page'); // Ensure only the correct link is highlighted
             }
         });
     });
